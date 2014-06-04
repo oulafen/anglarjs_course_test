@@ -3,7 +3,7 @@
     "type": "topic",
     "order": 2,
     "desc": [
-        "为了能够让Handler正确的响应我们的请求，展示出我们想要的页面，Handler需要由两部分组成页面模板（template）和控制器（controller），大致代码如下：\n\r```javascript .when('/student',{\rtemplate:'页面模板', \rcontroller:'控制器'\r});```\n\r",
+        "为了能够让Handler正确的响应我们的请求，展示出我们想要的页面，Handler需要由两部分组成页面模板（template）和控制器（controller），大致代码如下：\n\r     .when('/student',{\r\t     template:'页面模板', \r\t     controller:'控制器'\r        });\n\r",
         "这节我们讲页面模板，下面一节再讲控制器。\n\r",
         "我们可以使用templateUrl来指定对应的页面模板，templateUrl是要渲染的HTML页面的文件的相对路径。例如，我们有\\'students.html\\'是这个页面的模板，那么\\'templateUrl\\'则为\\'students.html\\'。\n\r"
     ],
