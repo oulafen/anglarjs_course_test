@@ -1,0 +1,11 @@
+<header class="header" id="choose_people_page">
+    选人
+    <button class="btn btn-primary header-left" ng-click='back_to_order_details()'>Back</button>
+</header>
+<ul class="list-style-2 ">
+    <li class=" clearfix btn-default" ng-repeat="person in people" ng-click='choose_person(person.name)'>
+        <p class="p-left">{{person.name}}</p>
+        <span class="glyphicon glyphicon-circle-arrow-right p-right"></span>
+    </li>
+</ul>
+

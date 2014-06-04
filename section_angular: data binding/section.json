@@ -1,0 +1,6 @@
+{
+    "name": "angular: data binding",
+    "desc": "数据绑定是AngularJS的一个核心特性.通过本次练习,了解控制器如何给页面提供数据;同时点击按钮时,如何实现页面的跳转.",
+    "order": 1,
+    "type": "normal"
+}

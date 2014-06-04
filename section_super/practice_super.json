@@ -1,0 +1,18 @@
+{
+    "name": "终极挑战",
+    "type": "super",
+    "point": 200,
+
+    "desc": "AngularJS应用的主要内容载体就是页面 了解页面如何展示是必备的基础知识 本关通过对路由配置文件的实际编写 来了解如何正确的展示一个应用页面",
+    "tips": "<li>this is tip for angular template practice A </li>",
+    "answer": "<li>this is answer for angular template practice A</li>",
+
+    "project_dir": "/angular part-one template",
+    "specs_dir":  "/specs",
+    "answer_tar": "/AngularJS-LunchMasterDemo.tar.gz",
+    "spec": {
+        "name": "index.html",
+        "path": "/angular part-one template/"
+    },
+    "order": 0
+}

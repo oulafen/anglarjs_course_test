@@ -1,0 +1,23 @@
+{
+    "title": "路由的配置",
+    "type": "topic",
+    "order": 1,
+    "desc": [
+        "像前文所说我们想要访问/students，并且显示所有学生的列表，那么我们需要正确的配置/students和Handler（响应器），将/students和Handler建立联系\n\r",
+        "我们如何建立联系呢？\n\r",
+        "我们通过.when函数把/students和Handler建立联系。代码如下:",
+        "\n\r     .when('/students',Handler)\n\r",
+        "这样当我们访问/students这个页面时，我们就交给handler响应/students的请求。"
+    ],
+    "code": ".when(url , Handler)",
+    "question": {
+        "content": "一个用户在地址栏输入了'localhost:3000/choose_person/liming'，那么浏览器就会展现出'liming'页面给用户。那么这里的url如何设置呢？",
+        "options": ["'/liming'","'/choose_person/liming'","'localhost:3000/choose_person/liming'"]
+    },
+    "answer": {
+        "value": "'/choose_person/liming'",
+        "explains": [
+            "<p>这里的URL是'localhost:3000/choose_person/liming'，域名是'localhost:3000'，答案当然是'/choose_person/liming'，而这部分我们可以称它为path</p>"
+        ]
+    }
+}

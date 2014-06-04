@@ -1,0 +1,33 @@
+{
+    "name": "1,列表迭代器",
+    "type": "normal",
+    "point": 200,
+
+    "simple_desc": "通过迭代器,将controller中众多的用户名展示在页面列表中.为用户列表提供内容.",
+
+    "desc": "1. 视频中通过Controller的js代码,给页面迭代器(ng-repeat='device in devices')的devices绑定一个JSON数组\n\r2. 使数组中每个元素是一个对象(格式:{name:'Goods',price:'Price'})\n\r3. 绑定后页面中devices的数据模型(实际值)就是被绑定的JSON数组\n\r4. 通过迭代器的表达式'device in devices' 页面中会存在变量device={name:'Goods',price:'Price'}\n\r5. 此后device可以被应用在页面表达式中(例如:{{device.name}}在最终被显示成Goods)",
+
+    "step_desc": "1. 在Controller中编写代码 给页面中迭代器(ng-repeat='person in people')的people绑定一个JSON数组(格式: [item1,item2,item3])\n\r2. 且使数组中每个元素(item)是一个对象(格式:{key:'value'})\n\r3. 通过迭代器的表达式'person in people'\n\r4. 使页面表达式{{person.name}}迭代出注释代码中规定的用户名",
+
+    "tips": "运用$scope给people绑定数据绑定的格式为JSON数组:[{key:'value'},{key:'value'},{key:'value'}]key的值为name 'value'的值分别为每个用户名 ",
+
+    "answer": "在controller中找到注释代码 在注释之间添加代码:\n\r    $scope.people= [{name:'赵大'},{name:'钱二'},{name:'张三'},{name:'李四'},{name:'王五'},{name:'刘六'}];",
+
+    "project_dir": "/angular part-one template",
+    "specs_dir": "/specs",
+    "files": [
+        {
+            "name": "choose_person_controller.js",
+            "path": "/angular part-one template/scripts/controllers/"
+        },
+        {
+            "name": "choose_person.html",
+            "path": "/angular part-one template/views/"
+        }
+    ],
+    "spec": {
+        "name": "index.html",
+        "path": "/angular part-one template/"
+    },
+    "order": 0
+}

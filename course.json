@@ -1,0 +1,22 @@
+{
+    "basic": {
+        "show_name": "Angular JS",
+        "id_name":   "angularJS",
+        "desc": "AngularJS是由Google创建的一种JS框架，使用它可以扩展应用程序中的HTML词汇，从而在web应用程序中使用HTML声明动态内容。",
+        "target_effect": {
+            "name": "订餐大师",
+            "desc": "订餐大师是行政帮大家订餐时使用的应用。我们通过订餐大师的案例来学习angularjs的基本知识以及web开发的基础框架。",
+            "href": "/super_show/index.html"
+        },
+        "order": 0,
+        "ico": "images/angularjs_logo.png",
+        "title_ico": "images/AngularJS.png"
+    },
+    "relevance": {
+        "type": "path",
+        "column": "_id",
+        "index": {
+            "name": "JavaScript"
+        }
+    }
+}

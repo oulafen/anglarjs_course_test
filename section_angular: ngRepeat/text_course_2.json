@@ -1,0 +1,19 @@
+{
+    "title": "ngRepeat使用格式1",
+    "type": "topic",
+    "order": 1,
+    "desc": [
+        "<p>'variable in expression'格式，其中'variable'是用户定义的循环变量，'expression'给出一个集合。例如：item in items ，我们可以直接枚举出items这个数组，也可以在控制器中控制这个数组的值;</p>"
+    ],
+    "code": "<li ng-repeat='number in [1,2,3]'>{{number}}</li>",
+    "question": {
+        "content": "那么当我们预览时，页面会显示什么内容呢？",
+        "options": ["1","number","1 2 3"]
+    },
+    "answer": {
+        "value": "1 2 3",
+        "explains": [
+            "<p>number是循环变量，[1,2,3]是一个枚举型的集合。我们使用ngRepeat从'[1,2,3]'数组中取出每一个元素，答案是'1 2 3'</p>"
+        ]
+    }
+}

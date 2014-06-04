@@ -1,0 +1,6 @@
+{
+    "name": "angular: ngRepeat",
+    "desc": "列表迭代器ng-repeat是angular一种高效呈现数据的机制,极大节省了处理数据的工作.",
+    "order": 2,
+    "type": "normal"
+}

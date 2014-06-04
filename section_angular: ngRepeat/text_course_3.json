@@ -1,0 +1,19 @@
+{
+    "title": "ngRepeat使用方法2",
+    "type": "topic",
+    "order": 2,
+    "desc": [
+        "<p>'(key, value) in expression'其中'(key, value)'也是可供用户自定义，而'expression'是一个集合（可以是枚举，或动态控制），例如：(name, age) in {'adam':10, 'amalie':12}</p>"
+    ],
+    "code": "<li ng-repeat='(name, age) in {'adam':10, 'amalie':12}'>{{name}}:{{age}}</li>",
+    "question": {
+        "content": "那么当我们预览时，页面会显示什么内容呢？",
+        "options": ["name:age","adam:10 amalie:12","name:adam  age:10 name:amalie  age:12"]
+    },
+    "answer": {
+        "value": "adam:10 amalie:12",
+        "explains": [
+            "<p>我们使用ngRepeat从{'adam':10, 'amalie':12}中取出每一个元素，答案是'adam:10 amalie:12'</p>"
+        ]
+    }
+}

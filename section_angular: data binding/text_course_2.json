@@ -1,0 +1,19 @@
+{
+    "title": "函数绑定",
+    "type": "topic",
+    "order": 1,
+    "desc": [
+        "除了可以绑定变量外，我们还可以绑定函数。函数绑定用于绑定HTML中的函数。例如，html文件中有一个\n\r     <button ng-click='alert_tip()'>tip</button> \n\r按钮标签，那么当我们点击这个按钮时就会触发alert_tip()这个函数，在控制器（Controller）中，通过$scope.alert_tip可以编写这个函数的具体代码。"
+    ],
+    "code": "//在html中有如下代码：\r\t<button ng-click='alert_tip()'>tip</button>",
+    "question": {
+        "content": "那么为了实现当我们单击按钮时，窗体提示'hello!'字样，在其相对应的控制器（Controller）中应该怎么编写代码呢？",
+        "options": ["$scope.alert_tip = function(){alert('hello!')}","function alert_tip(){alert('hello!')}","alert_tip = function(){alert('hello!')}"]
+    },
+    "answer": {
+        "value": "$scope.alert_tip = function(){alert('hello!')}",
+        "explains": [
+            "<p>我们通过'$scope.alert_tip'获取到页面上的按钮事件，然后再写出其对应的事件代码。答案应该是'$scope.alert_tip = function(){alert('hello!')}'。</p>"
+        ]
+    }
+}

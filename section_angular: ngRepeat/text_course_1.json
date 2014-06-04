@@ -1,0 +1,8 @@
+{
+    "title": "ngRepeat简介",
+    "type": "text",
+    "order": 0,
+    "desc": [
+        "<p>ngRepeat命令主要是在页面上显示数据使用。使用格式为ngRepeat='{repeat_expression}'。其中'repeat_expression'指示如何枚举集合的表达式，目前支持两种格式。另外，它还有一些特殊属性：$index（数据类型为number，是元素的迭代器），$first（数据类型为boolean，如果元素在迭代器中是第一个，则为真值），$middle（数据类型为boolean，如果元素在迭代器中位于第一个和最后一个中间，则为真值），$last（数据类型为boolean，如果元素在迭代器中位于最后一个，则为真值）</p>"
+    ]
+}
