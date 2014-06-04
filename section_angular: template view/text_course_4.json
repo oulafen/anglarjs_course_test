@@ -4,7 +4,7 @@
         "order": 3,
         "desc": [
            "本章最重要的部分就是控制器了，控制器可以动态的修改模板中的代码，具体如何修改会在以后的章节学习\n\r",
-           "这节我们重点讲，如何配置controller\n\r```javascript.when('/students',{\r\ttemplateUrl:'students.html'\r\tcontroller: '控制器的名字'/* 如左侧代码所示,我们用'controller: 控制器的名字'的格式来指定对应的控制器*/\r});```\n\r",
+           "这节我们重点讲，如何配置controller\n\r```js    .when('/students',{\r\t    templateUrl:'students.html'\r\t    controller: '控制器的名字'/* 如左侧代码所示,我们用'controller: 控制器的名字'的格式来指定对应的控制器*/\r     });```\n\r",
            "我们如何构造一个“控制器”，并设置它的“名字”，使它能够对模板“students.html”进行控制呢？假设我们要把他名字设置为“studentsCtrl”，大致代码的格式之一如下:\n\r      angular.module('orderMasterApp')\r\t     .controller('studentsCtrl', function ($scope) {/*这里写控制器的内容，我们在以后章节会详细讲解*/});\n\r" ,
            "下面是一个小练习，用来巩固所学的知识\r\n"
             ],
