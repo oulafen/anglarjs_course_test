@@ -11,7 +11,7 @@
         "order": 0,
         "ico": "images/angularjs_logo.png",
         "title_ico": "images/AngularJS.png",
-        "version": "1"
+        "version": "2"
     },
     "relevance": {
         "type": "path",
