@@ -5,13 +5,13 @@
 
     "simple_desc": "本地存储localStorage为我们提供了便捷的方法来存取应用中的数据,减少了全局变量的滥用.",
 
-    "desc": "1. 编程过程中我们总会处理到大量数据 在angularjs中我们使用localStorage来存取应用中的数据 如:1,将字符串'value'存入名称'key':localStorage.setItem('key':'value')2读取名称'key'的值localStorage.getItem('key')\n\r2. 在前面的练习中 我们跳转页面的方式为 $location.path('/url_name') 执行这段代码时 页面将会跳转到url对应的页面\n\r3. 本练习在'选人页'面通过$scope.choose_person(person_name)来处理被选人的信息 将其显示在'帮订餐'页面上",
+    "desc": "1. 编程过程中我们总会处理到大量数据 在angularjs中我们使用localStorage来存取应用中的数据 如:1,将字符串'value'存入名称'key':localStorage.setItem('key':'value')2读取名称'key'的值localStorage.getItem('key')\n\r2. 在前面的练习中 我们跳转页面的方式为 $location.path('/url\\_name') 执行这段代码时 页面将会跳转到url对应的页面\n\r3. 本练习在'选人页'面通过$scope.choose\\_person(person\\_name)来处理被选人的信息 将其显示在'帮订餐'页面上",
 
-    "step_desc": "1. 在$scope.choose_person(person_name)中编写存储数据和跳转页面的代码\n\r2. 使得点击某一用户时 该用户姓名被存入localStorage 且以'person_name'命名\n\r3. 存入后跳转到帮订餐页面\n\r4. 在帮订餐页面 将'people'数据取出并将其绑定到页面的person变量中",
+    "step_desc": "1. 在$scope.choose\\_person(person\\_name)中编写存储数据和跳转页面的代码\n\r2. 使得点击某一用户时 该用户姓名被存入localStorage 且以'person\\_name'命名\n\r3. 存入后跳转到帮订餐页面\n\r4. 在帮订餐页面 将'people'数据取出并将其绑定到页面的person变量中",
 
-    "tips": "在$scope.choose_person(person_name)函数体中添加代码\n\r1. 首先用localStorage.setItem('key',value)将参数person_name以名称'person_name'存入\n\r2. 用$location.path('/url_name')将页面跳转到'/order_details'\n\r3. 在帮订餐页面的controller中运用localStorage.getItem('key')将person_name信息取出\n\r4. 将取出的用户名绑定到页面的person变量中",
+    "tips": "在$scope.choose\\_person(person\\_name)函数体中添加代码\n\r1. 首先用localStorage.setItem('key',value)将参数person\\_name以名称'person\\_name'存入\n\r2. 用$location.path('/url\\_name')将页面跳转到'/order\\_details'\n\r3. 在帮订餐页面的controller中运用localStorage.getItem('key')将person\\_name信息取出\n\r4. 将取出的用户名绑定到页面的person变量中",
 
-    "answer": "在choose_person_controller的$scope.choose_person(person_name)中添加两行代码\n\r     localStorage.setItem('person_name',person_name);\n\r    $location.path('/order_details');\n\r在order_details_controller中添加一行代码:\n\r    $scope.person_name = localStorage.getItem('person_name');",
+    "answer": "在choose\\_person\\_controller的$scope.choose\\_person(person\\_name)中添加两行代码\n\r     localStorage.setItem('person\\_name',person\\_name);\n\r    $location.path('/order_details');\n\r在order\\_details\\_controller中添加一行代码:\n\r    $scope.person_name = localStorage.getItem('person_name');",
 
     "project_dir": "/angular part-one template",
     "specs_dir": "/specs",

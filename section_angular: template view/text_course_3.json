@@ -3,11 +3,11 @@
     "type": "topic",
     "order": 2,
     "desc": [
-        "为了能够让Handler正确的响应我们的请求，展示出我们想要的页面，Handler需要由两部分组成页面模板（template）和控制器（controller），大致代码如下：\n\r     .when('/student',{\r\t     template:'页面模板', \r\t     controller:'控制器'\r        });\n\r",
+        "为了能够让Handler正确的响应我们的请求，展示出我们想要的页面，Handler需要由两部分组成页面模板（template）和控制器（controller），大致代码如下：\n\r      .when('/student',{templateURL:'页面模板', controller:'控制器'})",
         "这节我们讲页面模板，下面一节再讲控制器。\n\r",
-        "我们可以使用templateUrl来指定对应的页面模板，templateUrl是要渲染的HTML页面的文件的相对路径。例如，我们有\\'students.html\\'是这个页面的模板，那么\\'templateUrl\\'则为\\'students.html\\'。\n\r"
+        "我们可以使用templateUrl来指定对应的页面模板，templateUrl是要渲染的HTML页面的文件的路径。例如，我们有\\'students.html\\'是这个页面的模板，那么\\'templateUrl\\'则为\\'students.html\\'。\n\r"
     ],
-    "code": ".when('/choose_person/liming', {\r\ttemplateUrl: '页面模板',\r\tcontroller: 'ChoosePersonCtrl'\r\t})",
+    "code": ".when('/choose_person/liming', {\r\ttemplateUrl: '页面模板',\r\tcontroller: '控制器'\r\t})",
     "question": {
         "content": "假设我们已经有'choose_person.html'，这个页面在views文件夹下，我们要实现当用户访问'/choose_person/liming'时会展现出'choose_person.html'的页面。那么代码区中'页面模板'应该怎么设置呢？",
         "options": ["views/choose_person.html","choose_person.html","choose_person"]
@@ -15,7 +15,7 @@
     "answer": {
         "value": "views/choose_person.html",
         "explains": [
-            "<p>这里应该写出页面模板文件相对路径，我们知道他在views文件夹下，答案应该是'views/choose_person.html'</p>"
+            "<p>这里应该写出页面模板文件路径，我们知道他在views文件夹下，答案应该是\"views/choose_person.html\"</p>"
         ]
     }
 }

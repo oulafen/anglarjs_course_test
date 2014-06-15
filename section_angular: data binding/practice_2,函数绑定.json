@@ -4,10 +4,10 @@
     "point": 200,
 
     "simple_desc": "实现当点击页面(View)的按钮时，调用控制器(Controller)的跳转函数。",
-    "desc": "1. 在前一个“变量绑定”的任务挑战中，你已经成功的给帮订餐页面(order_details.html)的按钮添加了“选人”这两个字。\n\r2. 本关中你要做的就是给“选人”按钮增加一个点击后跳转到选人页面(choose_person.html)的事件。\n\r3. 本关已经提供 choose_person_controller.js 和 choose_person.html 这两个文件，同时也完成了显示 选人页面(choose_person.html)路由的配置。而这次任务要完成的就是当点击 “选人”按钮时，调用 order_details_controller 提供的跳转函数的编写。",
-    "step_desc": "1. 请点击右侧显示的 route.js，在此文件内，已经为你配置好了访问和显示choose_person.html 页面的路由。\n\r2. 点击右侧的 order_details.html 文件，在此文件内，有go_choose_person() 这个函数，它就是用来绑定order_details_controller 内的跳转函数。\n\r3. 在order_details_controller.js 文件的 function 内，使用 $scope 来绑定页面上 go_choose_person() 函数, 并让这个函数等于一个可以实现跳转功能的函数。\n\r4. 页面的跳转可以使用 $location.path('/page_name')来实现。\n\r5. 点击保存并提交代码按钮后，若代码编写正确，弹框页面将会自动由订餐首页(main.html)跳转到帮订餐页面(order_details.html)，再自动跳转到选人页面(choose_person.html)。在编辑页面会提示“挑战成功！”。\n\r6. 注意：请勿修改 order_details.html 和 route.js 文件的内容。",
-    "tips": "在 order_details_controller.js 文件的$scope.choose_people = '选人';代码的下一行，用$scope.go_choose_person = function() {};来绑定函数, 接下来在给这个函数增加跳转功能。",
-    "answer": "在 order_details_controller.js 文件的$scope.choose_people = '选人'; 代码的下一行，添加代码：\n\r     $scope.go_choose_person = function(){\r\t    $location.path('/choose_person');};",
+    "desc": "1. 在前一个“变量绑定”的任务挑战中，你已经成功的给帮订餐页面(order\\_details.html)的按钮添加了“选人”这两个字。\n\r2. 本关中你要做的就是给“选人”按钮增加一个点击后跳转到选人页面(choose\\_person.html)的事件。\n\r3. 本关已经提供 choose\\_person\\_controller.js 和 choose\\_person.html 这两个文件，同时也完成了显示 选人页面(choose\\_person.html)路由的配置。而这次任务要完成的就是当点击 “选人”按钮时，调用 order\\_details\\_controller 提供的跳转函数的编写。",
+    "step_desc": "1. 请点击右侧显示的 route.js，在此文件内，已经为你配置好了访问和显示choose\\_person.html 页面的路由。\n\r2. 点击右侧的 order\\_details.html 文件，在此文件内，有go\\_choose\\_person() 这个函数，它就是用来绑定order\\_details\\_controller 内的跳转函数。\n\r3. 在order\\_details\\_controller.js 文件的 function 内，使用 $scope 来绑定页面上 go\\_choose\\_person() 函数, 并让这个函数等于一个可以实现跳转功能的函数。\n\r4. 页面的跳转可以使用 $location.path('/page\\_name')来实现。\n\r5. 点击保存并提交代码按钮后，若代码编写正确，弹框页面将会自动由订餐首页(main.html)跳转到帮订餐页面(order\\_details.html)，再自动跳转到选人页面(choose\\_person.html)。在编辑页面会提示“挑战成功！”。\n\r6. 注意：请勿修改 order\\_details.html 和 route.js 文件的内容。",
+    "tips": "在 order\\_details\\_controller.js 文件的$scope.choose\\_people = '选人';代码的下一行，用$scope.go\\_choose\\_person = function() {};来绑定函数, 接下来在给这个函数增加跳转功能。",
+    "answer": "在 order\\_details\\_controller.js 文件的$scope.choose\\_people = '选人'; 代码的下一行，添加代码：\n\r     $scope.go_choose_person = function(){\r\t    $location.path('/choose_person');};",
 
     "project_dir": "/angular part-one template",
     "specs_dir": "/specs",
