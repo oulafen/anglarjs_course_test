@@ -1,12 +1,12 @@
 <header class="header" id='order_details_page'>
-    订餐
+    订餐({{people_number}}人)
     <button class="btn btn-primary header-left" ng-click='back_to_main()'>Back</button>
 </header>
 <div class="wrapper">
     <h4>人：</h4>
     <input class='well full' ng-model='person_name' ng-disabled='true' type='text'/>
     <button class="btn btn-default btn-lg btn-block full" ng-click="go_choose_person()">{{choose_people}}</button>
-    <button class="btn btn-default btn-lg btn-block full" ng-click="confirm_order()" ng-show='false'
-            ng-click='confirm_order()' id='confirm'>确认
+    <button class="btn btn-default btn-lg btn-block full" ng-click="confirm_order()" ng-show='false' id='confirm'>
+        确认
     </button>
 </div>

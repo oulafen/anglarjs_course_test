@@ -206,6 +206,15 @@ function compute_result_of_js_angular_section_4_practice_2() {
     }
 
     setTimeout(function() {test_ngshow()}, 1400);
+    function check_attributes(elem_id,check_point){
+      var attributes = document.getElementById(elem_id).attributes;
+      for(var item in attributes){
+        if(attributes[item] && attributes[item].nodeValue == check_point){
+          return true;
+        }
+      }
+      return false;
+    }
     function test_ngshow(){
         var choose_people_page_id = document.getElementById("choose_people_page");
         if (choose_people_page_id) {
@@ -214,7 +223,7 @@ function compute_result_of_js_angular_section_4_practice_2() {
             scope.$apply(function () {
                 scope.choose_person('赵大');
             });
-            if( document.getElementById('confirm').length != 0 && document.getElementById('confirm').attributes[2].nodeValue == 'person_name') {
+            if( document.getElementById('confirm').length != 0 && check_attributes("confirm","person_name")) {
                 source.postMessage(true, "http://" + window.location.host);
             } else {
                 source.postMessage(false, "http://" + window.location.host);

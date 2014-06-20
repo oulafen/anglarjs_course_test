@@ -7,6 +7,7 @@ angular.module('orderMasterApp')
             'AngularJS',
             'Karma'
         ];
+        $scope.people_number = 0;
 
 
     //*****************在这里添加你的代码*****************

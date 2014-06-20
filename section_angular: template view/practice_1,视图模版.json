@@ -7,7 +7,7 @@
     "desc": "1. AngularJS中,每个页面的显示都需要三个要素:页面代码文件(**.html),控制器文件(**.js),页面的url.\n\r2. 仅有资源还不足以展示出想要的页面,我们需要配置页面的路由(route.js)以正确的将以上三种资源进行匹配整合\n\r3. 本关我们将为'order\\_details.html'这个页面创建他的路由\n\r4. 找到route.js文件 其中是为'main.html'配置路由的代码 通过url访问'/'或者不存在的路径 均会呈献出main.html的页面 其html页面(main.html)和控制器页面(main\\_controller.js)的文件已经给出",
     "step_desc": "1. 假设我们已经有'order\\_details.html'这个页面的资源('views/order\\_details.html'和'order\\_details\\_controller.js') 为这个页面配置他的路由\n\r2. 使当通过url访问'/order\\_details'时加载'order\\_details.html'页面 并受控制器order\\_details\\_controller控制\n\r3. 提交后 若代码编写正确 弹框页面将会自动由main页跳转至order\\_details页 且同时显示出下一关按钮",
     "tips": "请仿照route.js第16-19行代码将20-23行的代码修改成'order_details.html'页面正确的资源名称",
-    "answer": "将20-23行的代码修改成\n\r     .when(\"/order_details\", {\n\r      templateUrl: \"views/order_details.html\",\n\r      controller: \"OrderDetailsCtrl\"\r\n     })",
+    "answer": "将20-23行的代码修改成\n\r\t.when(\"/order_details\", {\r\t templateUrl: \"views/order_details.html\",\r\tcontroller: \"OrderDetailsCtrl\"\r\t})",
     "project_dir": "/angular part-one template",
     "specs_dir":"/specs",
     "files": [

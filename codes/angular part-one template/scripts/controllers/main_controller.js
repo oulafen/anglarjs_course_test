@@ -7,6 +7,7 @@ angular.module('orderMasterApp')
             'AngularJS',
             'Karma'
         ];
+        $scope.people_number = 0;
         $scope.help_order = function () {
             $location.path('/order_details')
         }

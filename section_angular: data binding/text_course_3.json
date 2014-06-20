@@ -1,0 +1,23 @@
+{
+    "title": "函数绑定",
+    "type": "topic",
+    "order": 2,
+    "desc": [
+        "除了可以绑定变量外，我们还可以绑定函数。",
+        "函数绑定用于绑定HTML中的事件，当有时间发生时被绑定的函数对时间做出响应。下面我们通过最简单的点击事件来学习函数绑定，代码如下：\n\r\t<button ng-click='alert_tip()'>{{example}}</button>",
+        "我们将button点击事件的响应函数设置为alert_tip()，在Controller中，通过$scope.alert_tip可以编写这个函数的具体代码。代码如下：\n\r\t$scope.alert_tip = function(){alert('你好')}",
+        "这时候我们点击'button'，将弹出窗口提示'你好'",
+        "下面继续上一节的练习，为'hello world'的button增加新功能，代码如下："
+    ],
+    "code": "//在html中有如下代码：\r\t<button ng-click='alert_tip()'>tip</button>",
+    "question": {
+        "content": "那么为了实现当我们单击按钮时，窗体提示'hello world!'字样，在其相对应的Controller中应该怎么编写代码呢？",
+        "options": ["$scope.alert_tip = function(){alert('hello world!')}","function alert_tip(){alert('hello world!')}","alert_tip = function(){alert('hello world!')}"]
+    },
+    "answer": {
+        "value": "$scope.alert_tip = function(){alert('hello world!')}",
+        "explains": [
+            "<p>我们通过'$scope.alert_tip'获取到页面上的按钮事件，然后将函数绑定到该事件。答案应该是'$scope.alert_tip = function(){alert('hello!')}'。</p>"
+        ]
+    }
+}

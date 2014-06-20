@@ -3,9 +3,13 @@
     "type": "topic",
     "order": 0,
     "desc": [
-        "<p>ngShow命令根据ngShow的属性表达式，显示或隐藏被给出的HTML元素。它的原理是通过移除或添加'ng-hide'css样式到元素上，来显示或隐藏元素。用法：ngShow='expression'，根据expression的真假来显示或隐藏元素</p>"
+        "有的时候我们要在页面上隐藏一些元素，再在一定的情况下展现出来，这个时候就要用到我们这节课要讲的ngShow，它可以显示或隐藏页面元素。",
+        "ngShow的原理是通过移除或添加'ng-hide'css样式到元素上，来显示或隐藏元素。页面代码如下：" ,
+        "\r\n\t<div ng-show='true'>name</div>\r\t<div ng-show='false'>age</div>",
+        "当ngShow的属性为真时显示内容，否则不显示，所以'name'将会被展示，而'age'不会被展示。",
+        "接下来我们做一个小练习回顾一下知识点:"
     ],
-    "code": "<div ng-show='true'>true</div>\r\t<div ng-show='false'>false</div>",
+    "code": "<div ng-show='true'>true</div>\r<div ng-show='false'>false</div>",
     "question": {
         "content": "那么当我们预览时，页面会显示内容吗？如果显示，那么又会显示那些内容呢？",
         "options": ["不显示","显示，true","显示，false","显示，true  false"]

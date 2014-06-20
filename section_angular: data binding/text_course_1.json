@@ -1,25 +1,12 @@
 {
-    "title": "变量绑定",
-    "type": "topic",
+    "title": "scope简介",
+    "type": "text",
     "order": 0,
     "desc": [
-        "我们已经学习了通过配置路由实现将不同的URL导向到相匹配Handler上。",
-        "接下来我们学习如何通过编写controller中的代码控制网页中的内容。这一节我们来学习anglarjs的数据绑定。",
-        "我们先来看一个数据绑定的小例子，修改页面中的变量，代码如下：",
-        "\n\r\t<button>{{example}}</button>",
-        "我们在页面把一个button设置为‘{{expression}}’，然后在Controller中，通过$scope获取到expression这个变量，并赋值'你好'，页面中的button上将展示‘你好’字样,代码如下：" ,
-        "\n\r\t$scope.expression=`你好`",
-        "下面我们做一个小练习，来回顾下上面所学的知识："
-    ],
-    "code": "//在main.html中有如下内容\r\t<p>Hello, {{name}}!</p>\r\t//在对应的控制器中有如下内容\r\t$scope.name='world';",
-    "question": {
-        "content": "那么当我们预览时，页面会显示什么内容呢？",
-        "options": ["Hello, {{name}}!","Hello, name!","Hello,world!","world"]
-    },
-    "answer": {
-        "value": "Hello,world!",
-        "explains": [
-            "<p>显然这里答案应该是'Hello,world!'，我们通过$scope.name='world';这条语句可以让HTML元素'name'设置为world，这样再结合已有的静态文字，得出'Hello,world!'</p>"
-        ]
-    }
+        "对我们来说scope其实并不是陌生的概念，在我们的上一章节“开始挑战”的练习中已经接触过scope了，细心的读者可能注意到如下代码:\n\r\t angular.module('orderMasterApp')\n\t\t\t.controller('OrderDetailsCtrl', function ($scope, $location)",
+        "controller中我们会通过‘$scope’将scope传递给controller，那么scope是什么呢？",
+        "这个scope直译是‘范围’，标准的说法是作用域，他限定了HTML与Controller的数据访问范围，针对不同的HTML和Controller可以设置不同的scope，而在不同的scope中访问的数据也会不同。这就好像我们走进一个宿舍有老大、老二、老三（按年龄排序），而在不同宿舍的老大、老二、老三都是不同的人，而宿舍就是这个scope。",
+        "有了scope我们能做什么呢？这样我们就可以用scope为HTML和Controller建立起数据访问的桥梁，同一个scope的HTML和Controller可以访问到相同的数据，就好像我们走进同一个宿舍老大、老二、老三总会是同一个人。我们接下来要讲我们如何使用这个机制。"
+    ]
 }
+

@@ -9,9 +9,8 @@
             "href": "/super_show/index.html"
         },
         "order": 0,
-        "ico": "images/angularjs_logo.png",
-        "title_ico": "images/AngularJS.png",
-        "version": "3"
+        "ico": "http://www.codefordream.com/images/angularjs_logo.png",
+        "title_ico": "http://www.codefordream.com/images/AngularJS.png"
     },
     "relevance": {
         "type": "path",
@@ -19,5 +18,6 @@
         "index": {
             "name": "JavaScript"
         }
-    }
+    },
+	"version":"1"
 }

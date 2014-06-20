@@ -1,19 +1,23 @@
 {
-    "title": "ngRepeat使用格式1",
+    "title": "ngRepeat映射使用方法",
     "type": "topic",
     "order": 1,
     "desc": [
-        "<p>'variable in expression'格式，其中'variable'是用户定义的循环变量，'expression'给出一个集合。例如：item in items ，我们可以直接枚举出items这个数组，也可以在控制器中控制这个数组的值;</p>"
+        "ngRepeat不仅仅能针对数组使用，他还能够对数据进行映射。方法很简单，只需要对页面中的变量设置'(key, value)‘，Controller中代码如下：",
+        "\r\n\t$scope.friends = [{ 'Tom': 18 },{ 'Jimmy': 16 },{ 'Vic': 30 },{ 'Bean' : 31 }];",
+        "这个时候我们设置了friends，我们要在页面进行展示name和age的值还需要在页面中加入如下代码：",
+        "\r\n\t<li ng-repeat='(name, age) in friends'>{{ name }}:{{ age }}</li>",
+        "这时候页面将依次显示friends中的内容，如'Tom:18',接下来我们做个小练习"
     ],
-    "code": "<li ng-repeat='number in [1,2,3]'>{{number}}</li>",
+    "code": "<li ng-repeat='(user, password) in {'admin':'admin', 'vic':'31415926'}'>{{user}}:{{password}}</li>",
     "question": {
         "content": "那么当我们预览时，页面会显示什么内容呢？",
-        "options": ["1","number","1 2 3"]
+        "options": ["user password","admin:admin vic:31415926","user:admin  password:admin user:amalie  password:31415926"]
     },
     "answer": {
-        "value": "1 2 3",
+        "value": "admin:admin vic:31415926",
         "explains": [
-            "<p>number是循环变量，[1,2,3]是一个枚举型的集合。我们使用ngRepeat从'[1,2,3]'数组中取出每一个元素，答案是'1 2 3'</p>"
+            "<p>我们使用ngRepeat从{'admin':'admin', 'vic':'31415926'}中取出每一个元素，答案是'admin:admin vic:314159262'</p>"
         ]
     }
 }

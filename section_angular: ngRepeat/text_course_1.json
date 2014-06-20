@@ -1,8 +1,25 @@
 {
-    "title": "ngRepeat简介",
-    "type": "text",
+    "title": "ngRepeat数组使用方法",
+    "type": "topic",
     "order": 0,
     "desc": [
-        "<p>ngRepeat命令主要是在页面上显示数据使用。使用格式为ngRepeat='{repeat_expression}'。其中'repeat_expression'指示如何枚举集合的表达式，目前支持两种格式。另外，它还有一些特殊属性：$index（数据类型为number，是元素的迭代器），$first（数据类型为boolean，如果元素在迭代器中是第一个，则为真值），$middle（数据类型为boolean，如果元素在迭代器中位于第一个和最后一个中间，则为真值），$last（数据类型为boolean，如果元素在迭代器中位于最后一个，则为真值）</p>"
+        "ngRepeat是为了更简洁、动态的展示数组在页面上而而设计的。下面我们看一段普通的页面展示一个数组是如何做的，代码如下：",
+        "\n\r\t\t<ul><li>Tom</li><li>Jimmy</li><li>Vic</li><li>Bean</li></ul>",
+        "那么用ngRepeat是如何展现一个数组呢，代码如下：",
+        "\n\r\t\t<ul><li ng-repeat='friend in ['Tom','Jimmy','Vic','Bean']'>{{ friend }}</li></ul>",
+        "两段代码展现的效果是相同的。第二段代码中，['Tom','Jimmy','Vic','Bean']是一个数组，我们使用ngRepeat将这个数组中的每一个元素设置给friend,然后通过'{{ friend }}'展示到页面。",
+        "下面我们做个小练习"
+    ],
+    "code": "<li ng-repeat='number in numbers'>{{number}}</li>",
+    "question": {
+    "content": "我们希望展示的内容是1、2、3，那么在Controller中，我们通过上节讲的数据绑定将数组设置给numbers，代码该如何编写呢？",
+    "options": ["numbers = [1,2,3]","$scope.numbers = 1,2,3", "$scope.numbers = [1,2,3]"]
+    },
+    "answer": {
+    "value": "$scope.numbers = [1,2,3]",
+    "explains": [
+    "<p>number是要展示的数据，numbers是一个数组，这个数组的值应该是[1,2,3]。我们通过数据绑定给numbers设置数据，那么答案当然是$scope.numbers = [1,2,3]</p>"
     ]
+    }
 }
+

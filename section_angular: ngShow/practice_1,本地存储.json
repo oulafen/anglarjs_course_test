@@ -11,7 +11,7 @@
 
     "tips": "在$scope.choose\\_person(person\\_name)函数体中添加代码\n\r1. 首先用localStorage.setItem('key',value)将参数person\\_name以名称'person\\_name'存入\n\r2. 用$location.path('/url\\_name')将页面跳转到'/order\\_details'\n\r3. 在帮订餐页面的controller中运用localStorage.getItem('key')将person\\_name信息取出\n\r4. 将取出的用户名绑定到页面的person变量中",
 
-    "answer": "在choose\\_person\\_controller的$scope.choose\\_person(person\\_name)中添加两行代码\n\r     localStorage.setItem('person\\_name',person\\_name);\n\r    $location.path('/order_details');\n\r在order\\_details\\_controller中添加一行代码:\n\r    $scope.person_name = localStorage.getItem('person_name');",
+    "answer": "在choose\\_person\\_controller的$scope.choose\\_person(person\\_name)中添加两行代码\n\r\tlocalStorage.setItem('person_name',person_name);\r\t$location.path('/order_details');\n\r在order\\_details\\_controller中添加一行代码:\n\r\t$scope.person_name = localStorage.getItem('person_name');",
 
     "project_dir": "/angular part-one template",
     "specs_dir": "/specs",
