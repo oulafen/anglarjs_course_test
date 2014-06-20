@@ -10,7 +10,8 @@
         },
         "order": 0,
         "ico": "http://www.codefordream.com/images/angularjs_logo.png",
-        "title_ico": "http://www.codefordream.com/images/AngularJS.png"
+        "title_ico": "http://www.codefordream.com/images/AngularJS.png",
+        "version": "1"
     },
     "relevance": {
         "type": "path",
@@ -18,6 +19,5 @@
         "index": {
             "name": "JavaScript"
         }
-    },
-    "version": "1"
+    }
 }
